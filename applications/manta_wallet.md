@@ -93,8 +93,10 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 Manta Wallet has been released for more than half a year.
 It is the wallet with the second largest number of users in the Polkadot ecosystem (the first is the official Polkadot.js)
 
+Change Log: https://github.com/Manta-Network/manta-extension/blob/develop/CHANGELOG.md
+
 - Total Chrome Store users 215K+ https://chrome.google.com/webstore/detail/enabgbdfcbaehmbigakijjabdpdnimlg
-- Manta Wallet has developed a total of 28 versions
+- Manta Wallet has developed a total of 28 versions. https://github.com/Manta-Network/manta-extension/releases
 - xxx zkAddresses activated on Manta Wallet
 - xxx transactions related to zk on Manta Wallet.
 
