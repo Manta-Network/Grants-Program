@@ -1,7 +1,7 @@
 # Manta Wallet
 
 - **Team Name:** Manta Wallet
-- **Payment Address:** 0x07cfc55be04a636f54314b8d3af9999997492d05 (USDT)
+- **Payment Address:** Ethereum(USDT/DAI/USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -10,59 +10,30 @@ A crypto wallet on Manta network.
 Manta wallet is an extension that lets you explore the Manta ecosystem in your browser.
 With the browser extension installed, Manta wallet allows you to engage with Web3 apps on the Manta blockchain.
 
-The Manta wallet Browser Extension lets you:
+#### The Manta wallet Browser Extension lets you:
 - Create wallet accounts with both public address and zkAddress with a single mnemonic.
 - Import, and persistently store the mnemonics and the derived private key.
 - View public assets and zkAssets in the wallet.
 - Connect to DApps and sign human-readable transactions from trusted DApps.
+- zkAssets public2Private, private2Private, private2Public
+- Show your recent public / private transactions
 
-We Keep You Safe
+#### We Keep You Safe
 - Manta wallet encrypts your keys and mnemonics on your device.
 - Import private keys and mnemonics into your wallet.
 - Rotate your private key from within the wallet if needed.
 - Easily review and simulate transactions before signing them.
 
 
-### Overview
-
-Please provide the following:
-
-- If the name of your project is not descriptive, a tagline (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
-
 ### Project Details
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
 - An overview of the technology stack to be used
+  React、TypeScript、Less、Ant-Design、Umi、Koa
 - Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
+  https://github.com/Manta-Network/manta-extension/blob/develop/README.md#get-start
 
-
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
-
-### Ecosystem Fit
-
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted. 
-- Are there any projects similar to yours in related ecosystems? 
 
 ## Team :busts_in_silhouette:
 
@@ -103,6 +74,7 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 ### Team Code Repos
 
 - <https://github.com/Manta-Network/manta-extension>
+- <https://github.com/Manta-Network/sdk>
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
@@ -118,81 +90,136 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+Manta Wallet has been released for more than half a year.
+It is the wallet with the second largest number of users in the Polkadot ecosystem (the first is the official Polkadot.js)
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+- Total Chrome Store users 215K+ https://chrome.google.com/webstore/detail/enabgbdfcbaehmbigakijjabdpdnimlg
+- Manta Wallet has developed a total of 28 versions
+- xxx zkAddresses activated on Manta Wallet
+- xxx transactions related to zk on Manta Wallet.
+
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
+- **Total Estimated Duration:** 7 months
+- **Full-Time Equivalent (FTE):**  5
+- **Total Costs:** 310,000 USD
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — Basic functionality
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
+- **Estimated duration:** 3 months
+- **FTE:**  5
+- **Costs:** 150,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| **0a.** | License | MIT |
+| **0b.** | Documentation | Early technology and product research, wallet UI and basic functions, ZK related SDK design |
+| 1. | Pre-technical conditions: 1 | Run Singer SDK in Extension |
+| 2. | Pre-technical conditions: 2 | Store and encrypt/decrypt seed from storage |
+| 3. | Pre-technical conditions: 3 | Design lock and unlock logic |
+| 4. | Pre-technical conditions: 4 | Sync UTXO data to IndexedDB |
+| 5. | Pre-technical conditions: 5 | Token structure design |
+| 6. | Pre-technical conditions: 6 | Transaction structure design |
+| 7. | Pre-technical conditions: 7 | Wallet structure design |
+| 8. | Pre-technical conditions: 8 | Provider Inject |
+| 9. | Page & UI Task: 1 | Create/import workflow - Choose create/import |
+| 10. | Page & UI Task: 2 | Create/import workflow - Create password |
+| 11. | Page & UI Task: 3 | Create/import workflow - Wallet import input |
+| 12. | Page & UI Task: 4 | Create/import workflow - Wallet create seed/mask |
+| 13. | Page & UI Task: 5 | Create/import workflow - Account details |
+| 14. | Page & UI Task: 6 | Home page - Menu bar |
+| 15. | Page & UI Task: 7 | Home page - Total Balance |
+| 16. | Page & UI Task: 8 | Home page - Token Balance List |
+| 17. | Page & UI Task: 9 | Home page - Network Choose |
+| 18. | Page & UI Task: 10 | Home page - Private/Public Choose |
+| 19. | Page & UI Task: 11 | Home page - Address Display |
+| 20. | Page & UI Task: 12 | Home page - Account Details Link |
+| 21. | Page & UI Task: 13 | Account Setting - Rename account |
+| 22. | Page & UI Task: 14 | Account Setting - View recovery phrase |
+| 23. | Page & UI Task: 15 | Account Setting - Delete Account |
+| 24. | Page & UI Task: 16 | Account Setting - Unlock wallet |
+| 25. | Page & UI Task: 17 | Dapp - DApp connected list |
+| 26. | Page & UI Task: 18 | Dapp - DApp connection request |
+| 27. | Page & UI Task: 19 | Dapp - DApp Signature request |
+| 28. | Page & UI Task: 20 | Dapp - DApp disconnect action |
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — SDK features & Wallet features
+
+- **Estimated Duration:** 2 month
+- **FTE:**  5
+- **Costs:** 100,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | SDK features & Wallet features |
+| 1. | Sync Data: 1 | Sync page |
+| 2. | Sync Data: 2 | Sync loading page |
+| 3. | Sync Data: 3 | Initialization page |
+| 4. | Sync Data: 4 | Home page balance sync |
+| 5. | SDK: 1 | Ledger data checkpoint sync |
+| 6. | SDK: 2 | New users sync the UTXO data. Improve initialization performance |
+| 7. | SDK: 3 | Implacement parsed data save |
+| 8. | SDK: 4 | PR Check CI |
+| 9. | SDK: 5 | Build private-related transactions on DApp, https://github.com/Manta-Network/sdk/tree/signer_extension/manta-js#if-you-want-to-connect-manta-wallet-in-your-dapp-build-private-related-transactions |
+| 10. | SDK: 6 | Integrate the SDK into your wallet, https://github.com/Manta-Network/sdk/tree/signer_extension/manta-js#if-you-want-to-test-the-sdk-or-integrate-the-sdk-into-your-wallet |
+| 11. | SDK: 7 | zkSBT related features, https://github.com/Manta-Network/sdk/tree/signer_extension/manta-js#if-you-want-to-test-zksbt-related-functions |
+| 12. | Private Transaction: 1 | Transfer assets from Public to Private |
+| 13. | Private Transaction: 2 | Transfer zkAssets from Private to Private |
+| 14. | Private Transaction: 3 | Transfer zkAssets from Private to Public |
+
+### Milestone 3 — Audit and Release
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **FTE:**  3
+- **Costs:** 30,000 USD
 
-...
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | Chrome Web Store & Security audit |
+| 1. | Technical checklist: 1 | Google developer account apply / Group Account |
+| 2. | Technical checklist: 2 | Banner & cover & description document |
+| 3. | Technical checklist: 3 | Privacy policy links |
+| 4. | Technical checklist: 4 | Code organization before audit |
+| 5. | Technical checklist: 5 | Handle audited issues and confirm audit reports |
+
+
+### Milestone 4 — Optimize Wallet
+
+- **Estimated Duration:** 1 month
+- **FTE:**  3
+- **Costs:** 30,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | MIT |
+| **0b.** | Documentation | Optimize Wallet |
+| 1. | Wallet: 1 | Integration Manta Network |
+| 2. | Wallet: 2 | Sync Transaction State from chain |
+| 3. | Wallet: 3 | Sync Transaction  history from chain |
+| 4. | Wallet: 4 | Sync balance when tx successful |
+| 5. | Wallet: 5 | Transaction detail and lists |
+| 6. | Wallet: 6 | Auto clean ledger data |
+| 7. | Wallet: 7 | Update Total Balance when change network |
+| 8. | Wallet: 8 | Sync token list from github configuration url |
+| 9. | Wallet: 9 | Save Network data to indexedDB |
+| 10. | Wallet: 10 | Disconnect dApp |
+| 11. | SDK: 1 | UTXO consolidation |
+| 12. | SDK: 2 | Add a retry mechanism to the initial_sync |
+| 13. | SDK: 3 | Add caching to the getMetadata interface that takes up too much bandwidth |
+| 14. | SDK: 4 | Add sdk node example |
+| 15. | SDK: 5 | Add Api estimateTransferPostsCount and consolidateTransferSend |
+| 16. | SDK: 6 | Add ledger sync progress, total ledger count and synced ledger count api |
 
 
 ## Future Plans
 
 Please include here
 
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
-
-## Referral Program (optional) :moneybag:
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** Polkadot/Kusama (USDT/USDC) payment address. Please also specify the currency. (e.g. 0x8920... (USDT))
-
-## Additional Information :heavy_plus_sign:
-
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+- The EVM function will be developed next
+- Continue to promote Manta Wallet
